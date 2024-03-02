@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>230702820982-219jql5pkgetal0jpkqr3qabqtsfrvki.apps.googleusercontent.com</string>
+	<string>572793570031-2uamslr5p5ebn2qk4bq7r4r6bs8jvn8h.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.230702820982-219jql5pkgetal0jpkqr3qabqtsfrvki</string>
+	<string>com.googleusercontent.apps.572793570031-2uamslr5p5ebn2qk4bq7r4r6bs8jvn8h</string>
 	<key>API_KEY</key>
-	<string>AIzaSyBN7FGnMpBA-R-UAEEka25Nj08wyuo8eW0</string>
+	<string>AIzaSyAg_IFlHidEVFuCIb6BRu4JUUhOe8bqbHo</string>
 	<key>GCM_SENDER_ID</key>
-	<string>230702820982</string>
+	<string>572793570031</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.example.zoomFullStack</string>
 	<key>PROJECT_ID</key>
-	<string>fullstackzoomproject</string>
+	<string>fullstack-zoom</string>
 	<key>STORAGE_BUCKET</key>
-	<string>fullstackzoomproject.appspot.com</string>
+	<string>fullstack-zoom.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,6 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:230702820982:ios:4194e640b1c63b7843b957</string>
+	<string>1:572793570031:ios:cad97874c792fccc70511a</string>
 </dict>
 </plist>
