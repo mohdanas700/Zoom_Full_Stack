@@ -3,7 +3,11 @@ import 'dart:ui';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:zoom_full_stack/resources/auth_methods.dart';
+import 'package:zoom_full_stack/screens/history_meeting_screen.dart';
+import 'package:zoom_full_stack/screens/meeting_screen.dart';
 import 'package:zoom_full_stack/utils/colors.dart';
+import 'package:zoom_full_stack/widgets/custom_button.dart';
 
 import '../widgets/home_meeting_button.dart';
 
@@ -22,6 +26,13 @@ class _HomeScreenState extends State<HomeScreen> {
     });
   }
 
+  List<Widget> pages = [
+    MeetingScreen(),
+    const HistoryMeetingScreen(),
+    const Text('Contacts'),
+    CustomButton(text: 'Log Out', onPressed: () => AuthMethods().signOut())
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -31,43 +42,7 @@ class _HomeScreenState extends State<HomeScreen> {
         title: const Text('Meet & Chat'),
         centerTitle: true,
       ),
-      body: Column(
-        children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              HomeMeetingButton(
-                onPressed: () {},
-                icon: Icons.videocam,
-                text: 'New Meeting',
-              ),
-              HomeMeetingButton(
-                onPressed: () {},
-                icon: Icons.add_box_rounded,
-                text: 'Join Meeting',
-              ),
-              HomeMeetingButton(
-                onPressed: () {},
-                icon: Icons.calendar_today,
-                text: 'Schedule',
-              ),
-              HomeMeetingButton(
-                onPressed: () {},
-                icon: Icons.arrow_upward,
-                text: 'Share Screen',
-              )
-            ],
-          ),
-          const Expanded(
-            child: Center(
-              child: Text(
-                'Create/Join Meetings with just a click!',
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
-              ),
-            ),
-          )
-        ],
-      ),
+      body: pages[_page],
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: footerColor,
         selectedItemColor: Colors.white,
